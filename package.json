@@ -1,14 +1,14 @@
 {
-  "name": "codemirror-lang-chordpro",
-  "version": "0.0.6",
+  "name": "@chordbook/codemirror-lang-chordpro",
+  "version": "0.0.1",
   "description": "ChordPro language support for CodeMirror",
   "scripts": {
-    "test": "mocha test/test.js",
+    "test": "mocha",
     "prepare": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bettermusic/studio.git"
+    "url": "https://github.com/chordpro/stucodemirror-lang-chordprodio.git"
   },
   "type": "module",
   "main": "dist/index.cjs",
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@lezer/generator": "^1.1.1",
+    "esbuild": "^0.20.2",
     "mocha": "^10.0.0",
     "rollup": "^2.79.0",
     "rollup-plugin-dts": "^4.0.1",
