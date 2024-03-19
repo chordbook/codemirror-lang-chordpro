@@ -4,15 +4,15 @@
   "description": "ChordPro language support for CodeMirror",
   "scripts": {
     "test": "mocha",
-    "prepare": "rollup -c"
+    "prepare": "cm-buildhelper src/index.ts"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/chordpro/stucodemirror-lang-chordprodio.git"
   },
   "type": "module",
-  "main": "dist/index.cjs",
   "module": "dist/index.js",
+  "main": "dist/index.cjs",
   "exports": {
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
@@ -26,14 +26,7 @@
     "@lezer/lr": "^1.2.5"
   },
   "devDependencies": {
-    "@lezer/generator": "^1.1.1",
-    "esbuild": "^0.20.2",
-    "mocha": "^10.0.0",
-    "rollup": "^2.79.0",
-    "rollup-plugin-dts": "^4.0.1",
-    "rollup-plugin-esbuild": "^4.10.1",
-    "rollup-plugin-ts": "^3.0.2",
-    "typescript": "^4.3.4"
+    "@codemirror/buildhelper": "^1.0.1"
   },
   "license": "MIT"
 }
