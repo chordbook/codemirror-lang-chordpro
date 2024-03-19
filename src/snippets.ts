@@ -17,7 +17,7 @@ const Directives = [
   "end_of_tab"
 ]
 
-export const snippets: readonly Completion[] = [
+const snippets: readonly Completion[] = [
   ...ValueDirectives.map(name => snippetCompletion(`{${name}: #{}}`, { label: name, type: "directive" })),
   ...Directives.map(name => snippetCompletion(`{${name}}`, { label: name, type: "directive" })),
 
@@ -39,3 +39,5 @@ export const snippets: readonly Completion[] = [
     `.replaceAll(/^\s*/gm, ''), { label: "tab", type: "directive" }
   )
 ]
+
+export default snippets

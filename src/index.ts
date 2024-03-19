@@ -1,7 +1,6 @@
 import { LRLanguage, LanguageSupport } from "@codemirror/language"
 import { styleTags, tags as t } from "@lezer/highlight"
-import { completeFromList } from "@codemirror/autocomplete"
-import { snippets } from "./snippets"
+import { chordproCompletionSource } from "./completion"
 import { parser } from "./syntax.grammar"
 
 export const ChordProLanguage = LRLanguage.define({
@@ -34,7 +33,7 @@ export const ChordProLanguage = LRLanguage.define({
 export function ChordPro() {
   return new LanguageSupport(ChordProLanguage, [
     ChordProLanguage.data.of({
-      autocomplete: completeFromList(snippets)
+      autocomplete: chordproCompletionSource
     })
   ])
 }
