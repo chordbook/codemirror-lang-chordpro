@@ -1,6 +1,6 @@
 {
   "name": "@chordbook/codemirror-lang-chordpro",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ChordPro language support for CodeMirror",
   "scripts": {
     "test": "mocha",
