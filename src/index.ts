@@ -1,6 +1,8 @@
-import {parser} from "./syntax.grammar"
-import {LRLanguage, LanguageSupport, indentNodeProp, foldNodeProp, foldInside, delimitedIndent} from "@codemirror/language"
-import {styleTags, Tag, tags as t} from "@lezer/highlight"
+import { LRLanguage, LanguageSupport } from "@codemirror/language"
+import { styleTags, tags as t } from "@lezer/highlight"
+import { completeFromList } from "@codemirror/autocomplete"
+import { snippets } from "./snippets"
+import { parser } from "./syntax.grammar"
 
 export const ChordProLanguage = LRLanguage.define({
   parser: parser.configure({
@@ -28,8 +30,13 @@ export const ChordProLanguage = LRLanguage.define({
   }
 })
 
+
 export function ChordPro() {
-  return new LanguageSupport(ChordProLanguage)
+  return new LanguageSupport(ChordProLanguage, [
+    ChordProLanguage.data.of({
+      autocomplete: completeFromList(snippets)
+    })
+  ])
 }
 
 export {exampleStringLinter} from "./lint"
