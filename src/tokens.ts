@@ -1,4 +1,4 @@
-import {titleText, authorText, sectionText, chordLineStart, directiveLineStart, blankLine, Comment, SectionName, Chord,
+import {titleText, authorText, chordLineStart, directiveLineStart, blankLine, Comment, SectionName, Chord,
         Dialect_noTitle} from "./syntax.grammar.terms"
 import {ExternalTokenizer, InputStream} from "@lezer/lr"
 
