@@ -1,4 +1,4 @@
-# Symbols {"dialect": "noTitle"}
+# Symbols
 
 [C2/E]
 [Dbm7]
@@ -6,45 +6,45 @@
 
 ==> Song(Lyrics(InlineChord(Chord)), Lyrics(InlineChord(Chord)), Lyrics(InlineChord(Chord)))
 
-# Numeric - minor {"dialect": "noTitle"}
+# Numeric - minor
 
 [2m]
 
 ==> Song(Lyrics(InlineChord(Chord)))
 
-# Numeric - accidentals {"dialect": "noTitle"}
+# Numeric - accidentals
 
 [#4m7]
 [b7]
 
 ==> Song(Lyrics(InlineChord(Chord)), Lyrics(InlineChord(Chord)))
 
-# Numeric - bass {"dialect": "noTitle"}
+# Numeric - bass
 
 [4/1]
 
 ==> Song(Lyrics(InlineChord(Chord)))
 
-# Numeral {"dialect": "noTitle"}
+# Numeral
 
 [V13]
 
 ==> Song(Lyrics(InlineChord(Chord)))
 
-# Numeral - accidentals {"dialect": "noTitle"}
+# Numeral - accidentals
 
 [bVII]
 [#IV]
 
 ==> Song(Lyrics(InlineChord(Chord)), Lyrics(InlineChord(Chord)))
 
-# Numeral - bass {"dialect": "noTitle"}
+# Numeral - bass
 
 [IV/I]
 
 ==> Song(Lyrics(InlineChord(Chord)))
 
-# no chord {"dialect": "noTitle"}
+# no chord
 
 []
 

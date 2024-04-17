@@ -1,4 +1,4 @@
-# Simple {"dialect": "noTitle"}
+# Simple
 
    Dm7              C/E                 F#
 My heart has always longed for something   more
@@ -7,7 +7,7 @@ My heart has always longed for something   more
 
 Song(ChordLine(Chord,Chord,Chord),Lyrics(Lyric))
 
-# Simple - Numbers {"dialect": "noTitle"}
+# Simple - Numbers
 
    2m7              2/3                 #4
 My heart has always longed for something  more
@@ -16,7 +16,7 @@ My heart has always longed for something  more
 
 Song(ChordLine(Chord,Chord,Chord),Lyrics(Lyric))
 
-# Simple - Numerals {"dialect": "noTitle"}
+# Simple - Numerals
 
    ii7              II/III              #IV
 My heart has always longed for something   more
@@ -25,7 +25,7 @@ My heart has always longed for something   more
 
 Song(ChordLine(Chord,Chord,Chord),Lyrics(Lyric))
 
-# Backslash should have it's own token {"dialect": "noTitle"}
+# Backslash should have it's own token
 
    Dm7               C/E                 F
 My heart has always \longed for something  more
@@ -43,9 +43,9 @@ Intro (5x)
 Eb(no3) / / / | / / / / |
 
 Verse 1
-Eb                   Ebsus         Eb      
+Eb                   Ebsus         Eb
 Saturday was silent, surely it was through
-Cm                         Bb        Ab2  Eb/G    Eb  / / / / 
+Cm                         Bb        Ab2  Eb/G    Eb  / / / /
    But since when has im - possible\ ever stopped You
 
 ==>
@@ -67,9 +67,9 @@ Intro (5x)
 Eb(no3) / / / | / / / / |
 
 Verse 1
-Eb                   Ebsus         Eb      
+Eb                   Ebsus         Eb
 Saturday was silent, surely it was through
-Cm                         Bb        Ab2  Eb/G    Eb  / / / / 
+Cm                         Bb        Ab2  Eb/G    Eb  / / / /
    But since when has im - possible\ ever stopped You
 
 ==>
@@ -86,10 +86,10 @@ Song(
 # Directive mid-section
 
 Verse 1
-Eb                   Ebsus         Eb      
+Eb                   Ebsus         Eb
 Saturday was silent, surely it was through
 transpose: 2
-Cm                         Bb        Ab2  Eb/G    Eb  / / / / 
+Cm                         Bb        Ab2  Eb/G    Eb  / / / /
    But since when has im - possible\ ever stopped You
 
 ==>
@@ -105,16 +105,16 @@ Song(
 # Space Mid-Section
 
 Chorus 1:
-Eb5                                     /Bb - /Ab Eb5 
+Eb5                                     /Bb - /Ab Eb5
 This is the sound\ of dry bones rattling
-Eb5                                           /Bb - /Ab Eb5 
+Eb5                                           /Bb - /Ab Eb5
 This is the praise\ make a dead man walk again
 
-         Cm                Bb  
+         Cm                Bb
 Open the grave, I'm coming out
-          Ab                   Eb   
+          Ab                   Eb
 I'm gonna live, gonna live a - gain
-Eb5                                     Ab - Eb/G Eb5 
+Eb5                                     Ab - Eb/G Eb5
 This is the sound\ of dry bones rattling
 Ab - Eb/G Eb5 / | Ab - Eb/G Eb5 /
 

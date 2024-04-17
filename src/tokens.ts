@@ -1,5 +1,4 @@
-import {titleText, authorText, chordLineStart, directiveLineStart, blankLine, Comment, SectionName, Chord,
-        Dialect_noTitle} from "./syntax.grammar.terms"
+import {chordLineStart, directiveLineStart, blankLine, Comment, SectionName, Chord} from "./syntax.grammar.terms"
 import {ExternalTokenizer, InputStream} from "@lezer/lr"
 
 const enum Ch {
@@ -232,14 +231,6 @@ export const line = new ExternalTokenizer((input, stack) => {
     return
   } else if (hasDirectiveName(input)) {
     input.acceptToken(directiveLineStart)
-  } else if (!stack.dialectEnabled(Dialect_noTitle) && stack.canShift(titleText) && wordChar(input.next)) {
-    skipLine(input)
-    input.acceptToken(titleText)
-    return
-  } else if (!stack.dialectEnabled(Dialect_noTitle) && stack.canShift(authorText) && wordChar(input.next)) {
-    skipLine(input)
-    input.acceptToken(authorText)
-    return
   } else if (readChord(input)) {
     // See if this is a chord-only line
     for (;;) {

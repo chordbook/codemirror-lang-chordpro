@@ -1,4 +1,4 @@
-# Lyrics {"dialect": "noTitle"}
+# Lyrics
 
 My [Dm7]heart has always [C/E]longed for something[F] more
 
@@ -7,7 +7,7 @@ My [Dm7]heart has always [C/E]longed for something[F] more
 Song(
   Lyrics(Lyric,InlineChord(Chord),Lyric,InlineChord(Chord),Lyric,InlineChord(Chord),Lyric))
 
-# Allows dangling ] {"dialect": "noTitle"}
+# Allows dangling ]
 
 Let it [Am]be
 [C]Whisper wor]ds of [F]wis[G]dom
@@ -18,7 +18,7 @@ Song(
   Lyrics(Lyric,InlineChord(Chord),Lyric),
   Lyrics(InlineChord(Chord),Lyric,InlineChord(Chord),Lyric,InlineChord(Chord),Lyric))
 
-# Allows dangling } {"dialect": "noTitle"}
+# Allows dangling }
 
 Let it [Am]be
 [C]Whisper wor}ds of [F]wis[G]dom
@@ -29,7 +29,7 @@ Song(
   Lyrics(Lyric,InlineChord(Chord),Lyric),
   Lyrics(InlineChord(Chord),Lyric,InlineChord(Chord),Lyric,InlineChord(Chord),Lyric))
 
-# Inline directives {"dialect": "noTitle"}
+# Inline directives
 
 {start_of_chorus}
 {c:Chorus 1}
@@ -50,7 +50,7 @@ Song(
     InlineChord(Chord)),
   Directive(DirectiveName))
 
-# Directive mid-verse {"dialect": "noTitle"}
+# Directive mid-verse
 
 {c:Chorus}
 And [Bb]I,[F/A][Gm][Bbma7/D]\ I'm desperate [Eb]for You[Gm7][Fsus][F]
@@ -77,7 +77,7 @@ Song(
     Separator,Lyric,InlineChord(Chord),Lyric,InlineChord(Chord),Lyric,InlineChord(Chord),Lyric,
     InlineChord(Chord)))
 
-# Meta with multiple sections {"dialect": "noTitle"}
+# Meta with multiple sections
 
 {t: Rattle}
 {key: Eb}

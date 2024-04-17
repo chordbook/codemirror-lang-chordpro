@@ -1,17 +1,17 @@
-# meta {"dialect": "chordpro"}
+# meta
 {capo: 2}
 {artist: Maverick City Music}
 ==> Song(Directive(DirectiveName, DirectiveValue), Directive(DirectiveName, DirectiveValue))
 
-# alias {"dialect": "chordpro"}
+# alias
 {t: Get Back}
 ==> Song(Directive(DirectiveName, DirectiveValue))
 
-# escapes special characters {"dialect": "chordpro"}
+# escapes special characters
 {title: my \{title\}}
 ==> Song(Directive(DirectiveName, DirectiveValue))
 
-# inline {"dialect": "chordpro"}
+# inline
 {start_of_verse}
 ==> Song(Directive("{", DirectiveName, "}"))
 

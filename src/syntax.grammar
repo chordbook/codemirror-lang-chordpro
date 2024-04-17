@@ -1,7 +1,4 @@
-@dialects { noTitle }
-
 @top Song {
-  (Title { titleText } eol (Author { authorText } eol)?)?
   ((Comment | Directive | LineDirective | Lyrics | blankLine | ChordLine | Section) (eol | eof))*
 }
 
@@ -23,8 +20,6 @@ InlineChord { "[" Chord? "]" }
 @external tokens line from "./tokens.js" {
   Comment
   blankLine
-  titleText
-  authorText
   SectionName
   chordLineStart
   directiveLineStart
